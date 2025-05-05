@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Product Catalog with Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>QuickCart</h1>
+  <input type="text" id="searchInput" placeholder="Search products...">
+  <button onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+</header>
+
+<div class="main-content">
+  <div class="product-container" id="productContainer"></div>
+
+  <div class="cart-sidebar" id="cartSidebar">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <p><strong>Total Items: <span id="cartTotal">0</span></strong></p>
+    <button onclick="clearCart()">Clear Cart</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
